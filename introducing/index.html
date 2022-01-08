@@ -19,13 +19,14 @@
   <hr>
   <h2>땅이는 제 친구의 친구의 친구인 포메라니안 입니다</h2>
   <h4>Profile</h4>
-  <div id="container">
-    <img id="img" src="./images/title.jpg" width="300px" height="380px" alt="title">
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="box" width="300px">이름 : 땅이</div>
+
+  <img id="img" src="./images/title.jpg" width="300px" height="380px" alt="title">
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="intro">
+    <div id="box">이름 : 땅이</div>
     <div id="box">나이 : 4살</div>
     <div id="box">취미 : 산책</div>
     <div id="box">특기 : 고집부리기(매우 쌤 주의)</div>
@@ -85,17 +86,18 @@
   <br><br>
   <img id="img" src="./images/watching2.jpg" width="400" height="500" alt="watching2">
   <hr>
-  땅이의 매력 점수를 매기자면??
-  <input type="radio" name="radio">1점
-  <input type="radio" name="radio">2점
-  <input type="radio" name="radio">100점
-  <input type="radio" name="radio">1000점
-  <input type="radio" name="radio">9999점
+  땅이의 매력 점수를 표현해 주세요!<br>
+  <input type="radio" name="radio" id="rdoBtn" value="1" onclick="test()">1점
+  <input type="radio" name="radio" id="rdoBtn" value="2" onclick="test()">2점
+  <input type="radio" name="radio" id="rdoBtn" value="100" onclick="test()">100점
+  <input type="radio" name="radio" id="rdoBtn" value="1000" onclick="test()">1000점
+  <input type="radio" name="radio" id="rdoBtn" value="9999" onclick="test()">9999점
   <br>
   <br>
   땅이에게 한마디 하시죠
-  <input type="text" placeholder="멍멍뭉">
-  <button id="box">땅이야! 읽어줘!</button>
+  <input type="text" id="message" placeholder="사랑과 정성을 담아" onfocus="gaze()">
+  <button id="box" onclick="response()">땅이에게 전송</button>
+  <div id="response"></div>
   <br>
   <br>
 
@@ -189,5 +191,6 @@
   mopil1102@naver.com<br>
   <a href="https://github.com/mopil" target="_blank">제작자 깃허브 구경가기</a>
 </body>
+<script src="index.js"></script>
 
 </html>

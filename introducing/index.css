@@ -26,11 +26,6 @@ td {
   border-radius: 18px;
 }
 
-/* #container {
-  display: flex;
-  justify-content: center;
-} */
-
 a:hover {
   color: aqua;
 }
@@ -45,6 +40,7 @@ a:hover {
   height: 35px;
   
 }
+
 
 #box:hover {
   background-color:coral;
