@@ -2,9 +2,71 @@
 <html>
 <head>
   <title>시간표</title>
+  <link rel="stylesheet" href="table.css"></style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 </head>
-<body>
-  <table border="1">
+<body bgcolor="azure">
+  <h1>안녕하세요 옆집(?) 땅이를 소개합니다</h1><hr>
+  <h3>노래 들으면서 감상하시죠</h3>
+  <iframe width="100" height="100" src="https://www.youtube.com/embed/U0dzo96150s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr>
+  <h2>땅이는 제 친구의 친구의 친구인 포메라리안 입니다</h2>
+  <h4>Profile</h4>
+  <div id="container">
+    <img id="img" src="title.jpg" width="300px" height="380px" alt="title">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="box" width="300px">이름 : 땅이</div>
+    <div id="box">나이 : 4살</div>
+    <div id="box">취미 : 산책</div>
+    <div id="box">특기 : 고집부리기(매우 쌤 주의)</div>
+    <div id="box">주의사항 : 편의점에서 파는 1000원짜리 간식은 거들떠 보지도 않는 매우 높은 수준의 후각 레벨을 보유 중</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <h2>땅이는 산책을 무척 좋아해요</h2>
+  <img id="img" src="walking.jpg" width="400" height="500" alt="walking"><br>
+  산책하는 땅이좌
+  <br>
+  <br>
+  <h2>단지 고집이 좀 쌜 뿐이에요</h2>
+  땅이는 자기가 가기 싫은 곳으로 산책하면 그 자리에 앉아버린답니다<br><br>
+  <img id="img" src="walkingWait.jpg" width="400" height="500" alt="walkingWait"><br>
+  귀...귀여웡
+  <h2>백치미가 땅이의 치명적인 매력이죠</h2>
+  
+  <img id="img" src="yarn1.jpg" width="400" height="500" alt="yarn1">
+  <img id="img" src="yarn2.jpg" width="400" height="500" alt="yarn2">
+  <br>땅이는 착해서 잘 짖지도 않아요(이와중에 건치구나 땅아)
+  <br>
+  <br>
+
+  <hr>
+  땅이의 매력 점수를 매기자면??
+  <input type="radio" name="radio">1점
+  <input type="radio" name="radio">2점
+  <input type="radio" name="radio">100점
+  <input type="radio" name="radio">1000점
+  <input type="radio" name="radio">9999점
+  <br>
+  <br>
+  땅이에게 한마디 하시죠
+  <input type="text" placeholder="멍멍뭉">
+  <!-- <input id="box" type="submit" value="땅이야! 읽어줘!"> -->
+  <button id="box">땅이야! 읽어줘!</button>
+  <br>
+  <br>
+
+
+
+  <table>
+    <caption>땅이의 하루 일과표(?)</caption>
     <tr>
       <td> </td>
       <td>월</td>
@@ -24,17 +86,17 @@
     <tr>
       <td>10:00</td>
       <td></td>
-      <td rowspan="2">웹</td>
+      <td id="web" rowspan="2">웹</td>
       <td></td>
       <td></td>
-      <td rowspan="3">보안</td>
+      <td id="security" rowspan="3">보안</td>
     </tr>
     <tr>
       <td>11:00</td>
-      <td>공개SW</td>
+      <td id="openSW">공개SW</td>
       <!-- <td></td> -->
       <td></td>
-      <td>웹</td>
+      <td id="web">웹</td>
       <!-- <td></td> -->
     </tr>
     <tr>
@@ -48,14 +110,14 @@
     <tr>
       <td>13:00</td>
       <td></td>
-      <td rowspan="2">모바일</td>
-      <td rowspan="2">공개SW</td>
-      <td>모바일</td>
+      <td id="mobile" rowspan="2">모바일</td>
+      <td id="openSW" rowspan="2">공개SW</td>
+      <td id="mobile">모바일</td>
       <td></td>
     </tr>
     <tr>
       <td>14:00</td>
-      <td rowspan="3">클라우드</td>
+      <td id="cloud" rowspan="3">클라우드</td>
       <!-- <td></td> -->
       <!-- <td></td> -->
       <td></td>
@@ -64,9 +126,9 @@
     <tr>
       <td>15:00</td>
       <!-- <td></td> -->
-      <td rowspan="2">객체1</td>
+      <td id="OOP1" rowspan="2">객체1</td>
       <td></td>
-      <td rowspan="2">객체1</td>
+      <td id="OOP1" rowspan="2">객체1</td>
       <td></td>
     </tr>
     <tr>
@@ -83,7 +145,7 @@
       <td></td>
       <td></td>
       <td></td>
-      <td rowspan="2">C연습</td>
+      <td id="C" rowspan="2">C연습</td>
     </tr>
     <tr>
       <td>18:00</td>
@@ -94,5 +156,10 @@
       <!-- <td></td> -->
     </tr>
   </table>
+  <br>
+  <br>
+  <hr>
+  <h1>끝까지 스크롤 내린 당신은 혹시 천사..?</h1>
+  <a href="https://github.com/mopil" target="_blank">제작자 깃허브 구경가기</a>
 </body>
 </html>
